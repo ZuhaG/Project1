@@ -3,7 +3,7 @@ using namespace std;
 
 int main() {
     char op;
-    double num1, num2;
+    int num1, num2;
 
     // Prompt user to enter operator and numbers
     cout << "Enter operator: +, -, *, /: ";
