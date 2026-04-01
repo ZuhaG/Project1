@@ -6,7 +6,7 @@ int main() {
     int num1, num2;
 
     // Prompt user to enter operator and numbers
-    cout << "Enter operator: +, -, *, /: ";
+    cout << "Enter operator: +, -, *, /, %: ";
     cin >> op;
 
     cout << "Enter two operands: ";
@@ -29,6 +29,14 @@ int main() {
                 cout << "Error! Division by zero is not allowed.";
             } else {
                 cout << num1 << " / " << num2 << " = " << num1 / num2;
+            }
+            break;
+         case '%':
+            // Handle modulus by zero
+            if (num2 == 0) {
+                cout << "Error! Modulus by zero is not allowed.";
+            } else {
+                cout << num1 << " % " << num2 << " = " << num1 % num2;
             }
             break;
         default:
